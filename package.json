@@ -1,0 +1,30 @@
+{
+  "name": "create-elysia-app",
+  "description": "CLI tool to scaffold ElysiaJS projects",
+  "version": "1.0.0",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsup src/index.ts --format esm,cjs --out-dir dist --dts"
+  },
+  "type": "module",
+  "bin": {
+    "create-elysia-app": "dist/index.js"
+  },
+  "keywords": ["elysia", "cli", "scaffold"],
+  "author": "Koyang Ahmad Abass abasskoyang@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
+    "execa": "^9.6.1",
+    "fs-extra": "^11.3.2",
+    "ora": "^9.0.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
